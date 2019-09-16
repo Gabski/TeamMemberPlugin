@@ -1,0 +1,51 @@
+$main: #222;
+
+.tmp {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    &__element {
+        margin-bottom: 1rem;
+        position: relative;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.17);
+        border-radius: 5px;
+        overflow: hidden;
+        padding: 0;
+        box-sizing: border-box;
+    }
+}
+
+
+.tmp__element {
+
+    &__name {
+        position: absolute;
+        background: rgba($main, .5);
+        width: 100%;
+        padding: 1rem;
+        color: #eee;
+        font-weight: 800;
+        bottom: 0;
+    }
+
+    &__figure {
+        margin: 0;
+        padding: 0;
+        z-index: -1;
+
+        &__img {
+            height: auto;
+            max-width: 100%;
+            margin: 0;
+            padding: 0;  
+            z-index: -1;
+        }
+    }
+
+}
+
+.tmp__element__name--no-image {
+    position: relative;
+    background: rgba($main, .8);
+}
